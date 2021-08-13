@@ -17,20 +17,20 @@
 
 <script id="hexo-configurations">
     var NexT = window.NexT || {};
-    var CONFIG = {"hostname":"lqid9.com","root":"/","scheme":"Pisces","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
+    var CONFIG = {"hostname":"lqid9.com","root":"/","scheme":"Pisces","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":true,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
-  <meta name="description" content="这篇文章好多地方已经过时啦！">
+  <meta name="description" content="这篇文章好多地方已经过时啦！ 首先感谢基鹏发给我相关的攻略, 我基本是根据这篇攻略操作的, 但是有很多东西我需要自己安装。而且主题我没有按照攻略里的, 自己选择了 next 主题。https:&#x2F;&#x2F;www.cnblogs.com&#x2F;liuxianan&#x2F;p&#x2F;build-blog-website-by-hexo-github.html">
 <meta property="og:type" content="article">
-<meta property="og:title" content="在github上用hexo搭建个人博客">
+<meta property="og:title" content="在 github 上用 hexo 搭建个人博客">
 <meta property="og:url" content="https://lqid9.com/2020/06/19/2/index.html">
 <meta property="og:site_name" content="lqid&#39;s blog">
-<meta property="og:description" content="这篇文章好多地方已经过时啦！">
+<meta property="og:description" content="这篇文章好多地方已经过时啦！ 首先感谢基鹏发给我相关的攻略, 我基本是根据这篇攻略操作的, 但是有很多东西我需要自己安装。而且主题我没有按照攻略里的, 自己选择了 next 主题。https:&#x2F;&#x2F;www.cnblogs.com&#x2F;liuxianan&#x2F;p&#x2F;build-blog-website-by-hexo-github.html">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://lqid9.com/2020/06/19/2/1.png">
 <meta property="og:image" content="https://lqid9.com/2020/06/19/2/2.png">
 <meta property="article:published_time" content="2020-06-19T19:37:10.000Z">
-<meta property="article:modified_time" content="2021-08-12T18:11:33.676Z">
+<meta property="article:modified_time" content="2021-08-12T21:54:46.168Z">
 <meta property="article:author" content="lqid">
 <meta property="article:tag" content="不务正业">
 <meta name="twitter:card" content="summary">
@@ -49,7 +49,7 @@
   };
 </script>
 
-  <title>在github上用hexo搭建个人博客 | lqid's blog</title>
+  <title>在 github 上用 hexo 搭建个人博客 | lqid's blog</title>
   
 
 
@@ -146,10 +146,6 @@
     </header>
 
     
-  <div class="back-to-top">
-    <i class="fa fa-arrow-up"></i>
-    <span>0%</span>
-  </div>
 
 
     <main class="main">
@@ -177,7 +173,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          在github上用hexo搭建个人博客
+          在 github 上用 hexo 搭建个人博客
         </h1>
 
         <div class="post-meta">
@@ -194,7 +190,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2021-08-12 19:11:33" itemprop="dateModified" datetime="2021-08-12T19:11:33+01:00">2021-08-12</time>
+                <time title="修改时间：2021-08-12 22:54:46" itemprop="dateModified" datetime="2021-08-12T22:54:46+01:00">2021-08-12</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -202,11 +198,15 @@
               </span>
               <span class="post-meta-item-text">分类于</span>
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E6%8A%80%E6%9C%AF/" itemprop="url" rel="index"><span itemprop="name">技术</span></a>
+                  <a href="/categories/tech/" itemprop="url" rel="index"><span itemprop="name">技术</span></a>
                 </span>
                   ，
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E6%8A%80%E6%9C%AF/HEXO/" itemprop="url" rel="index"><span itemprop="name">HEXO</span></a>
+                  <a href="/categories/tech/Linux/" itemprop="url" rel="index"><span itemprop="name">Linux</span></a>
+                </span>
+                  ，
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/tech/Linux/HEXO/" itemprop="url" rel="index"><span itemprop="name">HEXO</span></a>
                 </span>
             </span>
 
@@ -222,58 +222,59 @@
 
       
         <p><span style="color:#FF0000;font-size:48px"> 这篇文章好多地方已经过时啦！</span></p>
+<p>首先感谢基鹏发给我相关的攻略, 我基本是根据这篇攻略操作的, 但是有很多东西我需要自己安装。而且主题我没有按照攻略里的, 自己选择了 next 主题。<br><a target="_blank" rel="noopener" href="https://www.cnblogs.com/liuxianan/p/build-blog-website-by-hexo-github.html">https://www.cnblogs.com/liuxianan/p/build-blog-website-by-hexo-github.html</a></p>
 <span id="more"></span>
-<p>首先感谢基鹏发给我相关的攻略，我基本是根据这篇攻略操作的，但是有很多东西我需要自己安装。而且主题我没有按照攻略里的，自己选择了next主题。<br><a target="_blank" rel="noopener" href="https://www.cnblogs.com/liuxianan/p/build-blog-website-by-hexo-github.html">https://www.cnblogs.com/liuxianan/p/build-blog-website-by-hexo-github.html</a></p>
-<h1 id="一-Github仓库设置"><a href="#一-Github仓库设置" class="headerlink" title="一  Github仓库设置"></a>一  Github仓库设置</h1><p>根据Github官方给的教程<br><a target="_blank" rel="noopener" href="https://guides.github.com/features/pages/">https://guides.github.com/features/pages/</a><br>注册好github后选New repository，仓库名为 <code>username.github.io</code> (where “username” is your actual GitHub user name)<br><img src="/2020/06/19/2/1.png"></p>
-<h1 id="二-配置SSH-key"><a href="#二-配置SSH-key" class="headerlink" title="二  配置SSH key"></a>二  配置SSH key</h1><p><a target="_blank" rel="noopener" href="https://help.github.com/en/github/authenticating-to-github/connecting-to-github-with-ssh">https://help.github.com/en/github/authenticating-to-github/connecting-to-github-with-ssh</a><br>去先下载git，<a target="_blank" rel="noopener" href="https://git-scm.com/downloads">https://git-scm.com/downloads</a><br>用git bash 输入</p>
+
+<h1 id="一-Github-仓库设置"><a href="#一-Github-仓库设置" class="headerlink" title="一  Github 仓库设置"></a>一  Github 仓库设置</h1><p>根据 Github 官方给的教程<br><a target="_blank" rel="noopener" href="https://guides.github.com/features/pages/">https://guides.github.com/features/pages/</a><br>注册好 github 后选 New repository, 仓库名为 <code>username.github.io</code> (where “username” is your actual GitHub user name)<br><img src="/2020/06/19/2/1.png"></p>
+<h1 id="二-配置-SSH-key"><a href="#二-配置-SSH-key" class="headerlink" title="二  配置 SSH key"></a>二  配置 SSH key</h1><p><a target="_blank" rel="noopener" href="https://help.github.com/en/github/authenticating-to-github/connecting-to-github-with-ssh">https://help.github.com/en/github/authenticating-to-github/connecting-to-github-with-ssh</a><br>去先下载git, <a target="_blank" rel="noopener" href="https://git-scm.com/downloads">https://git-scm.com/downloads</a><br>用 git bash 输入</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ ssh-keygen -t rsa -b 4096 -C &quot;your_email@example.com&quot;</span><br></pre></td></tr></table></figure>
-<p>然后一路回车，打开<code>.ssh\id_rsa.pub</code>，复制里面的内容添加到Github的设置页面里。</p>
+<p>然后一路回车, 打开 <code>.ssh\id_rsa.pub</code>, 复制里面的内容添加到 Github 的设置页面里。</p>
 <p>可以用</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ ssh -T git@github.com</span><br></pre></td></tr></table></figure>
-<p>测试SSH key是否添加成功。</p>
-<h1 id="三-安装hexo"><a href="#三-安装hexo" class="headerlink" title="三  安装hexo"></a>三  安装hexo</h1><p>到 <a target="_blank" rel="noopener" href="https://nodejs.org/en/">https://nodejs.org/en/</a> 安装node.js，最好是选recommended for most users这个版本<br><img src="/2020/06/19/2/2.png"><br>安装完node.js之后就可以安装hexo了</p>
+<p>测试 SSH key 是否添加成功。</p>
+<h1 id="三-安装-hexo"><a href="#三-安装-hexo" class="headerlink" title="三  安装 hexo"></a>三  安装 hexo</h1><p>到 <a target="_blank" rel="noopener" href="https://nodejs.org/en/">https://nodejs.org/en/</a> 安装 node.js, 最好是选 recommended for most users 这个版本<br><img src="/2020/06/19/2/2.png"><br>安装完 node.js 之后就可以安装 hexo 了</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install -g hexo</span><br></pre></td></tr></table></figure>
-<p>用git bash cd到一个空文件夹，输入</p>
+<p>用 git bash cd 到一个空文件夹, 输入</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo init</span><br></pre></td></tr></table></figure>
 <p>在這個文件夹里初始化一个博客。</p>
 <p>接着就可以用这两个命令预览</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ hexo g # 生成</span><br><span class="line">$ hexo s # 启动服务</span><br></pre></td></tr></table></figure>
-<p><code>hexo g</code>会生成一个public文件夹，<code>hexo s</code>能让电脑通过 <a href="http://localhost:4000访问本地博客">http://localhost:4000访问本地博客</a></p>
-<h1 id="四-next主题"><a href="#四-next主题" class="headerlink" title="四  next主题"></a>四  next主题</h1><p>在本地博客主目录下安装next主题<br><a target="_blank" rel="noopener" href="http://theme-next.iissnan.com/">http://theme-next.iissnan.com/</a><br>用git bash输入</p>
+<p><code>hexo g</code> 会生成一个public文件夹, <code>hexo s</code> 能让电脑通过 <a href="http://localhost:4000访问本地博客">http://localhost:4000访问本地博客</a></p>
+<h1 id="四-next-主题"><a href="#四-next-主题" class="headerlink" title="四  next 主题"></a>四  next 主题</h1><p>在本地博客主目录下安装 next 主题<br><a target="_blank" rel="noopener" href="http://theme-next.iissnan.com/">http://theme-next.iissnan.com/</a><br>用 git bash 输入</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git clone https://github.com/iissnan/hexo-theme-next themes/next</span><br></pre></td></tr></table></figure>
-<p>然后就根据官方使用文档自定义一些外观。<br>我比较喜欢Piscess這個Scheme，就把<code>scheme: Muse</code>前面加上#注释掉，把<code>scheme: Pisces</code>前面的#去了。</p>
-<h1 id="五-上传到Github"><a href="#五-上传到Github" class="headerlink" title="五  上传到Github"></a>五  上传到Github</h1><p>用<code>hexo s</code>预览好博客之后就可以上传到Github了。<br>首先安装插件</p>
+<p>然后就根据官方使用文档自定义一些外观。<br>我比较喜欢 Piscess 這個 Scheme, 就把 <code>scheme: Muse</code> 前面加上 # 注释掉, 把 <code>scheme: Pisces</code> 前面的 # 去了。</p>
+<h1 id="五-上传到-Github"><a href="#五-上传到-Github" class="headerlink" title="五  上传到 Github"></a>五  上传到 Github</h1><p>用 <code>hexo s</code> 预览好博客之后就可以上传到 Github 了。<br>首先安装插件</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
 
-<p>然后在博客主目录下的<code>_config.yml</code>最后把deploy的参数改好</p>
+<p>然后在博客主目录下的 <code>_config.yml</code> 最后把 deploy 的参数改好</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  repository: git@github.com:lqid1998/lqid1998.github.io.git</span><br><span class="line">  branch: master</span><br></pre></td></tr></table></figure>
 
-<p>然后用<code>hexo d</code>就可以把有改动的代码提交到Github上的仓库。<br>等1，2分钟就可以在 <a target="_blank" rel="noopener" href="https://lqid1998.github.io/">https://lqid1998.github.io</a> 里看到配置好了的博客了。</p>
-<h1 id="六-写作方法"><a href="#六-写作方法" class="headerlink" title="六  写作方法"></a>六  写作方法</h1><p>这里参考了 <a target="_blank" rel="noopener" href="https://www.jianshu.com/p/56d99a3049a5">https://www.jianshu.com/p/56d99a3049a5</a> 这篇博文，就当做个总结</p>
-<h2 id="1-新建文章"><a href="#1-新建文章" class="headerlink" title="1.新建文章"></a>1.新建文章</h2><p>首先在<code>_config.yml</code>中把<code>post_asset_folder:false</code>改成true，这样方便后续添加图片等东西，然后用命令</p>
+<p>然后用 <code>hexo d</code> 就可以把有改动的代码提交到 Github 上的仓库。<br>等1, 2分钟就可以在 <a target="_blank" rel="noopener" href="https://lqid1998.github.io/">https://lqid1998.github.io</a> 里看到配置好了的博客了。</p>
+<h1 id="六-写作方法"><a href="#六-写作方法" class="headerlink" title="六  写作方法"></a>六  写作方法</h1><p>这里参考了 <a target="_blank" rel="noopener" href="https://www.jianshu.com/p/56d99a3049a5">https://www.jianshu.com/p/56d99a3049a5</a> 这篇博文, 就当做个总结</p>
+<h2 id="1-新建文章"><a href="#1-新建文章" class="headerlink" title="1. 新建文章"></a>1. 新建文章</h2><p>首先在 <code>_config.yml</code> 中把 <code>post_asset_folder:false</code> 改成 true , 这样方便后续添加图片等东西, 然后用命令</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new post \&lt;title&gt;</span><br></pre></td></tr></table></figure>
-<p>创建一个新的页面，用文字编辑器打开<code>\&lt;title&gt;.md</code> 就可以写作了。</p>
-<p>在顶上的tags栏可以加多个tag</p>
+<p>创建一个新的页面, 用文字编辑器打开 <code>\&lt;title&gt;.md</code> 就可以写作了。</p>
+<p>在顶上的 tags 栏可以加多个 tag</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">tags: [tag1,tag2,tag3]</span><br></pre></td></tr></table></figure>
-<h2 id="2-图片"><a href="#2-图片" class="headerlink" title="2.图片"></a>2.图片</h2><p>首先安装插件</p>
+<h2 id="2-图片"><a href="#2-图片" class="headerlink" title="2. 图片"></a>2. 图片</h2><p>首先安装插件</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install https://github.com/CodeFalling/hexo-asset-image --save</span><br></pre></td></tr></table></figure>
-<p>然后就可以把图片放在和&lt;title&gt;.md同目录下的同名文件夹，如picture.png就可以用下面的代码添加图片,[alt]是图片的文字描述。</p>
+<p>然后就可以把图片放在和 <code>&lt;title&gt;.md</code> 同目录下的同名文件夹, 如 picture.png 就可以用下面的代码添加图片, [alt] 是图片的文字描述。</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">![alt](/picture.png)</span><br></pre></td></tr></table></figure>
 
-<h2 id="3-斜体和粗体"><a href="#3-斜体和粗体" class="headerlink" title="3.斜体和粗体"></a>3.斜体和粗体</h2><p>写法</p>
+<h2 id="3-斜体和粗体"><a href="#3-斜体和粗体" class="headerlink" title="3. 斜体和粗体"></a>3. 斜体和粗体</h2><p>写法</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">*这是斜体* 或 _这也是斜体_ </span><br><span class="line">**这是粗体**</span><br><span class="line">***这是加粗斜体***</span><br><span class="line">~~这是删除线~~</span><br></pre></td></tr></table></figure>
 <p>效果<br><em>这是斜体</em> 或 <em>这也是斜体</em><br><strong>这是粗体</strong><br><em><strong>这是加粗斜体</strong></em><br><del>这是删除线</del></p>
 <h2 id="4-分级标题"><a href="#4-分级标题" class="headerlink" title="4.分级标题"></a>4.分级标题</h2><p>写法</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"># 一级标题</span><br><span class="line">## 二级标题</span><br><span class="line">### 三级标题</span><br><span class="line">#### 四级标题</span><br><span class="line">##### 五级标题</span><br><span class="line">###### 六级标题</span><br></pre></td></tr></table></figure>
 <p>效果</p>
-<h1 id="一级标题"><a href="#一级标题" class="headerlink" title="一级标题"></a>一级标题</h1><h2 id="二级标题"><a href="#二级标题" class="headerlink" title="二级标题"></a>二级标题</h2><h3 id="三级标题"><a href="#三级标题" class="headerlink" title="三级标题"></a>三级标题</h3><h4 id="四级标题"><a href="#四级标题" class="headerlink" title="四级标题"></a>四级标题</h4><h5 id="五级标题"><a href="#五级标题" class="headerlink" title="五级标题"></a>五级标题</h5><h6 id="六级标题"><a href="#六级标题" class="headerlink" title="六级标题"></a>六级标题</h6><h2 id="5-插入代码"><a href="#5-插入代码" class="headerlink" title="5.插入代码"></a>5.插入代码</h2><p>反引号可以引用只有一行的代码 比如`114514` 效果<code>114514</code><br>如果分多段可以用這個</p>
+<h1 id="一级标题"><a href="#一级标题" class="headerlink" title="一级标题"></a>一级标题</h1><h2 id="二级标题"><a href="#二级标题" class="headerlink" title="二级标题"></a>二级标题</h2><h3 id="三级标题"><a href="#三级标题" class="headerlink" title="三级标题"></a>三级标题</h3><h4 id="四级标题"><a href="#四级标题" class="headerlink" title="四级标题"></a>四级标题</h4><h5 id="五级标题"><a href="#五级标题" class="headerlink" title="五级标题"></a>五级标题</h5><h6 id="六级标题"><a href="#六级标题" class="headerlink" title="六级标题"></a>六级标题</h6><h2 id="5-插入代码"><a href="#5-插入代码" class="headerlink" title="5.插入代码"></a>5.插入代码</h2><p>反引号可以引用只有一行的代码 比如 `114514` 效果 <code>114514</code><br>如果分多段可以用這個</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&#123;% codeblock %&#125;</span><br><span class="line">114514</span><br><span class="line">&#123;% endcodeblock %&#125;</span><br></pre></td></tr></table></figure>
 <p>效果</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">114514</span><br></pre></td></tr></table></figure>
 
 
-<p>目前就先写到这了，如果新学了什么写法的话我就会更新在后面，如果加个多也考虑分出一篇博文专门总结写作格式。这样就不用一边Google+Baidu一遍码字了。</p>
-<p>19/06/2020 温州，隔离中</p>
+<p>目前就先写到这了, 如果新学了什么写法的话我就会更新在后面, 如果加个多也考虑分出一篇博文专门总结写作格式。这样就不用一边 Google+Baidu 一遍码字了。</p>
+<p>19/06/2020 温州, 隔离中</p>
 
     </div>
 
@@ -284,7 +285,7 @@
       <footer class="post-footer">
           
           <div class="post-tags">
-              <a href="/tags/%E4%B8%8D%E5%8A%A1%E6%AD%A3%E4%B8%9A/" rel="tag"><i class="fa fa-tag"></i> 不务正业</a>
+              <a href="/tags/anything-but-work/" rel="tag"><i class="fa fa-tag"></i> 不务正业</a>
           </div>
 
         
@@ -358,7 +359,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E4%B8%80-Github%E4%BB%93%E5%BA%93%E8%AE%BE%E7%BD%AE"><span class="nav-number">1.</span> <span class="nav-text">一  Github仓库设置</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E4%BA%8C-%E9%85%8D%E7%BD%AESSH-key"><span class="nav-number">2.</span> <span class="nav-text">二  配置SSH key</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E4%B8%89-%E5%AE%89%E8%A3%85hexo"><span class="nav-number">3.</span> <span class="nav-text">三  安装hexo</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%9B%9B-next%E4%B8%BB%E9%A2%98"><span class="nav-number">4.</span> <span class="nav-text">四  next主题</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E4%BA%94-%E4%B8%8A%E4%BC%A0%E5%88%B0Github"><span class="nav-number">5.</span> <span class="nav-text">五  上传到Github</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%85%AD-%E5%86%99%E4%BD%9C%E6%96%B9%E6%B3%95"><span class="nav-number">6.</span> <span class="nav-text">六  写作方法</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-%E6%96%B0%E5%BB%BA%E6%96%87%E7%AB%A0"><span class="nav-number">6.1.</span> <span class="nav-text">1.新建文章</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-%E5%9B%BE%E7%89%87"><span class="nav-number">6.2.</span> <span class="nav-text">2.图片</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-%E6%96%9C%E4%BD%93%E5%92%8C%E7%B2%97%E4%BD%93"><span class="nav-number">6.3.</span> <span class="nav-text">3.斜体和粗体</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-%E5%88%86%E7%BA%A7%E6%A0%87%E9%A2%98"><span class="nav-number">6.4.</span> <span class="nav-text">4.分级标题</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E4%B8%80%E7%BA%A7%E6%A0%87%E9%A2%98"><span class="nav-number">7.</span> <span class="nav-text">一级标题</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BA%8C%E7%BA%A7%E6%A0%87%E9%A2%98"><span class="nav-number">7.1.</span> <span class="nav-text">二级标题</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%B8%89%E7%BA%A7%E6%A0%87%E9%A2%98"><span class="nav-number">7.1.1.</span> <span class="nav-text">三级标题</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%9B%9B%E7%BA%A7%E6%A0%87%E9%A2%98"><span class="nav-number">7.1.1.1.</span> <span class="nav-text">四级标题</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#%E4%BA%94%E7%BA%A7%E6%A0%87%E9%A2%98"><span class="nav-number">7.1.1.1.1.</span> <span class="nav-text">五级标题</span></a><ol class="nav-child"><li class="nav-item nav-level-6"><a class="nav-link" href="#%E5%85%AD%E7%BA%A7%E6%A0%87%E9%A2%98"><span class="nav-number">7.1.1.1.1.1.</span> <span class="nav-text">六级标题</span></a></li></ol></li></ol></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#5-%E6%8F%92%E5%85%A5%E4%BB%A3%E7%A0%81"><span class="nav-number">7.2.</span> <span class="nav-text">5.插入代码</span></a></li></ol></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E4%B8%80-Github-%E4%BB%93%E5%BA%93%E8%AE%BE%E7%BD%AE"><span class="nav-number">1.</span> <span class="nav-text">一  Github 仓库设置</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E4%BA%8C-%E9%85%8D%E7%BD%AE-SSH-key"><span class="nav-number">2.</span> <span class="nav-text">二  配置 SSH key</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E4%B8%89-%E5%AE%89%E8%A3%85-hexo"><span class="nav-number">3.</span> <span class="nav-text">三  安装 hexo</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%9B%9B-next-%E4%B8%BB%E9%A2%98"><span class="nav-number">4.</span> <span class="nav-text">四  next 主题</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E4%BA%94-%E4%B8%8A%E4%BC%A0%E5%88%B0-Github"><span class="nav-number">5.</span> <span class="nav-text">五  上传到 Github</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%85%AD-%E5%86%99%E4%BD%9C%E6%96%B9%E6%B3%95"><span class="nav-number">6.</span> <span class="nav-text">六  写作方法</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-%E6%96%B0%E5%BB%BA%E6%96%87%E7%AB%A0"><span class="nav-number">6.1.</span> <span class="nav-text">1. 新建文章</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-%E5%9B%BE%E7%89%87"><span class="nav-number">6.2.</span> <span class="nav-text">2. 图片</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-%E6%96%9C%E4%BD%93%E5%92%8C%E7%B2%97%E4%BD%93"><span class="nav-number">6.3.</span> <span class="nav-text">3. 斜体和粗体</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-%E5%88%86%E7%BA%A7%E6%A0%87%E9%A2%98"><span class="nav-number">6.4.</span> <span class="nav-text">4.分级标题</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E4%B8%80%E7%BA%A7%E6%A0%87%E9%A2%98"><span class="nav-number">7.</span> <span class="nav-text">一级标题</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BA%8C%E7%BA%A7%E6%A0%87%E9%A2%98"><span class="nav-number">7.1.</span> <span class="nav-text">二级标题</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%B8%89%E7%BA%A7%E6%A0%87%E9%A2%98"><span class="nav-number">7.1.1.</span> <span class="nav-text">三级标题</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%9B%9B%E7%BA%A7%E6%A0%87%E9%A2%98"><span class="nav-number">7.1.1.1.</span> <span class="nav-text">四级标题</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#%E4%BA%94%E7%BA%A7%E6%A0%87%E9%A2%98"><span class="nav-number">7.1.1.1.1.</span> <span class="nav-text">五级标题</span></a><ol class="nav-child"><li class="nav-item nav-level-6"><a class="nav-link" href="#%E5%85%AD%E7%BA%A7%E6%A0%87%E9%A2%98"><span class="nav-number">7.1.1.1.1.1.</span> <span class="nav-text">六级标题</span></a></li></ol></li></ol></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#5-%E6%8F%92%E5%85%A5%E4%BB%A3%E7%A0%81"><span class="nav-number">7.2.</span> <span class="nav-text">5.插入代码</span></a></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -374,20 +375,20 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">5</span>
+          <span class="site-state-item-count">6</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
       <div class="site-state-item site-state-categories">
             <a href="/categories/">
           
-        <span class="site-state-item-count">9</span>
+        <span class="site-state-item-count">10</span>
         <span class="site-state-item-name">分类</span></a>
       </div>
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
           
-        <span class="site-state-item-count">4</span>
+        <span class="site-state-item-count">6</span>
         <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>
@@ -396,6 +397,10 @@
 
 
       </div>
+        <div class="back-to-top motion-element">
+          <i class="fa fa-arrow-up"></i>
+          <span>0%</span>
+        </div>
 
     </div>
   </aside>

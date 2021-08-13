@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 5.4.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"lqid9.com","root":"/","scheme":"Pisces","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":true,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
+  </script>
+
+  <meta name="description" content="去年写了2篇之后就再也没有动过这个博客, 今天重新把它搞起来。架设博客用的 Hexo+NexT 都有了很大的更新, 只能自己从头搞了。废了半天劲终于是把网站重新架起来, 又折腾了点 git, 在 github 仓库里开了一个存放 hexo 源代码的 branch, 这样在其他机子上也可以写博客, 至少拿 macbook 出门的时候又多了点事可以做。 既然重新搞好了, 那总还是得加点新东西的吧, 就">
+<meta property="og:type" content="article">
+<meta property="og:title" content="去年搞好了博客结果就再也没用过……">
+<meta property="og:url" content="https://lqid9.com/2021/08/10/1/index.html">
+<meta property="og:site_name" content="lqid&#39;s blog">
+<meta property="og:description" content="去年写了2篇之后就再也没有动过这个博客, 今天重新把它搞起来。架设博客用的 Hexo+NexT 都有了很大的更新, 只能自己从头搞了。废了半天劲终于是把网站重新架起来, 又折腾了点 git, 在 github 仓库里开了一个存放 hexo 源代码的 branch, 这样在其他机子上也可以写博客, 至少拿 macbook 出门的时候又多了点事可以做。 既然重新搞好了, 那总还是得加点新东西的吧, 就">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://i.imgur.com/isFcxIF.jpg">
+<meta property="og:image" content="https://i.imgur.com/A6buk5d.jpg">
+<meta property="og:image" content="https://i.imgur.com/Uvv4kuU.jpg">
+<meta property="og:image" content="https://i.imgur.com/eHJkjf9.jpg">
+<meta property="og:image" content="https://i.imgur.com/gpNEEOY.jpg">
+<meta property="og:image" content="https://i.imgur.com/c5vi4W8.jpg">
+<meta property="og:image" content="https://i.imgur.com/MUIgzXE.jpg">
+<meta property="og:image" content="https://i.imgur.com/zIivL9G.jpg">
+<meta property="og:image" content="https://i.imgur.com/niKOcev.jpg">
+<meta property="og:image" content="https://i.imgur.com/K6oJBfP.jpg">
+<meta property="og:image" content="https://i.imgur.com/xBWGOkc.jpg">
+<meta property="og:image" content="https://i.imgur.com/NUrZNqN.jpg">
+<meta property="og:image" content="https://i.imgur.com/CNnq3kp.jpg">
+<meta property="og:image" content="https://i.imgur.com/PJLkLAR.jpg">
+<meta property="og:image" content="https://i.imgur.com/JZM1YeM.jpg">
+<meta property="og:image" content="https://i.imgur.com/ek6T2Fk.jpg">
+<meta property="og:image" content="https://i.imgur.com/pleU2iI.jpg">
+<meta property="og:image" content="https://i.imgur.com/T58aJwH.jpg">
+<meta property="og:image" content="https://i.imgur.com/3SVPnmh.jpg">
+<meta property="og:image" content="https://i.imgur.com/hPYIpRy.jpg">
+<meta property="og:image" content="https://i.imgur.com/t0ovg29.jpg">
+<meta property="og:image" content="https://i.imgur.com/ljlkkyE.jpg">
+<meta property="og:image" content="https://i.imgur.com/WVUYx8K.jpg">
+<meta property="og:image" content="https://i.imgur.com/uZcTkRa.jpg">
+<meta property="og:image" content="https://i.imgur.com/NTVPJj3.jpg">
+<meta property="og:image" content="https://i.imgur.com/TXEX2Ms.jpg">
+<meta property="article:published_time" content="2021-08-10T00:52:12.000Z">
+<meta property="article:modified_time" content="2021-08-13T11:14:24.843Z">
+<meta property="article:author" content="lqid">
+<meta property="article:tag" content="随笔">
+<meta property="article:tag" content="键盘化学家">
+<meta property="article:tag" content="不务正业">
+<meta property="article:tag" content="图集">
+<meta property="article:tag" content="牛津">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://i.imgur.com/isFcxIF.jpg">
+
+<link rel="canonical" href="https://lqid9.com/2021/08/10/1/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'zh-CN'
+  };
+</script>
+
+  <title>去年搞好了博客结果就再也没用过…… | lqid's blog</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">lqid's blog</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a>
+
+  </li>
+        <li class="menu-item menu-item-categories">
+
+    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a>
+
+  </li>
+  </ul>
+</nav>
+
+
+
+
+</div>
+    </header>
+
+    
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://lqid9.com/2021/08/10/1/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/avatar.gif">
+      <meta itemprop="name" content="lqid">
+      <meta itemprop="description" content="我好菜啊.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="lqid's blog">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          去年搞好了博客结果就再也没用过……
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2021-08-10 01:52:12" itemprop="dateCreated datePublished" datetime="2021-08-10T01:52:12+01:00">2021-08-10</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2021-08-13 12:14:24" itemprop="dateModified" datetime="2021-08-13T12:14:24+01:00">2021-08-13</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/ramblings/" itemprop="url" rel="index"><span itemprop="name">随笔</span></a>
+                </span>
+                  ，
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/photos/" itemprop="url" rel="index"><span itemprop="name">图集</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <p>去年写了2篇之后就再也没有动过这个博客, 今天重新把它搞起来。架设博客用的 Hexo+NexT 都有了很大的更新, 只能自己从头搞了。废了半天劲终于是把网站重新架起来, 又折腾了点 git, 在 github 仓库里开了一个存放 hexo 源代码的 branch, 这样在其他机子上也可以写博客, 至少拿 macbook 出门的时候又多了点事可以做。</p>
+<p>既然重新搞好了, 那总还是得加点新东西的吧, 就在这里简单记录一下这一年都发生了什么吧。</p>
+<span id="more"></span>
+<p>自从去年入门计算之后, 就一直在学习新东西。在换了新的台式机之后, 我目前拿 VMware 里的 Centos 8 虚拟机来当 Windows 下的 terminal 用, 手上的计算资源也从利物浦的 barkla 换成了牛津化学系的 hartree, 学校的 arcus, 还有 UCL 的 young。今年初开始 VASP 推出了 VASP6, 拿到源代码之后就开始沉迷编译  vasp, 前几天还试着给 vasp.6.2.1 加上 Grimme 的 DFT-d4。回顾了去年写的第 1 篇博文里讲装 Linux 虚拟机和用 barla 跑 vasp 遇到的问题感觉自己好傻逼, 要是换现在 vasp 跑不起来, 绝对撸起袖子自己编译算了, 要什么管理员给权限, 当时像天书一般的 bash 脚本现在也能看懂个大概了。去年从组里 Saad 的基于 pymatgen 的作图脚本 fork 出了一份, 发展到现在和现在 Saad 分享的作图脚本已经完成变成不同的东西, 也算是个用 python 的练手机会。理论方面啃完了 Hoffman 的 2 篇讲 Solid state chemistry 的文章, Szabo 的 Modern Quantum Chemisty 也快看完了。目前手上正在做的是一个钙钛矿 project, 不过最近看了点电子结构分析的东西, 打算有空魔改一个 VASP 的代码, 模仿里面的 ELF 模块做个 DORI 分析之类的。前几天把家里的破 Sky hub 换成一个 asus 的 dsl 路由器, 终于有了端口转发功能可以架本地服务器, 把之前买的域名绑上之后, 再把一直吃灰的 macbook 翻出来, 这样终于可以在外面访问家里的 Centos 虚拟机了。最近还整了一个树莓派, 用来长时间开机作为 Centos 虚拟机的补充。不过目前遇到一个问题, Centos 上开启了 Cisco AnyConnect VPN 之后就没法从外面 ssh 进来, 目前还没想到什么好的解决方法 O_o 这一年从头到尾就是沿着 “发现问题” - “找别人写好的指南” - “遇到了指南里没有的情况” - “痛苦的自己摸索” - “成功解决/我是废物” 这样一个轨迹, 在解决一个个问题的路上过去了。</p>
+<p>最后贴几张照片吧</p>
+<p>8月就提前到了英国, 感谢鱼头给了我一个周转的地方可以暂住一个多月。然后就搬进了在 Wolfson College 的宿舍, 这里搬运我发在<a target="_blank" rel="noopener" href="https://www.zhihu.com/question/47739942/answer/1136507618">知乎上一个回答</a><br><img src="https://i.imgur.com/isFcxIF.jpg" alt="房间内部"><br><img src="https://i.imgur.com/A6buk5d.jpg" alt="窗外的草坪"><br><img src="https://i.imgur.com/Uvv4kuU.jpg" alt="餐桌和沙发"><br><img src="https://i.imgur.com/eHJkjf9.jpg" alt="厨房"></p>
+<p>学院里的景色<br><img src="https://i.imgur.com/gpNEEOY.jpg" alt="门口的湖"><br><img src="https://i.imgur.com/c5vi4W8.jpg" alt="门口的湖"><br><img src="https://i.imgur.com/MUIgzXE.jpg" alt="湖边的草坪"><br>晚霞<br><img src="https://i.imgur.com/zIivL9G.jpg" alt="晚霞"><br>洗衣机免费！<br><img src="https://i.imgur.com/niKOcev.jpg" alt="洗衣机免费！"><br>鸭子！<br><img src="https://i.imgur.com/K6oJBfP.jpg" alt="鸭子！"><br>圣诞树<br><img src="https://i.imgur.com/xBWGOkc.jpg" alt="圣诞树"><br>雪景<br><img src="https://i.imgur.com/NUrZNqN.jpg" alt="雪景"><br><img src="https://i.imgur.com/CNnq3kp.jpg" alt="雪景"><br><img src="https://i.imgur.com/PJLkLAR.jpg" alt="雪景"></p>
+<p>到了3, 4月的时候搬到离市中心更近的地方去了</p>
+<p>客厅<br><img src="https://i.imgur.com/JZM1YeM.jpg" alt="客厅"><br>我的卧室<br><img src="https://i.imgur.com/ek6T2Fk.jpg" alt="我的卧室"><br>书房(游戏室)<br><img src="https://i.imgur.com/pleU2iI.jpg" alt="书房(游戏室)"><br>当个码农<br><img src="https://i.imgur.com/T58aJwH.jpg" alt="当个码农"><br>打麻将<br><img src="https://i.imgur.com/3SVPnmh.jpg" alt="打麻将"><br>太热了, 买个小空调<br><img src="https://i.imgur.com/hPYIpRy.jpg" alt="太热了, 买个小空调"><br>夏天就要吃西瓜<br><img src="https://i.imgur.com/t0ovg29.jpg" alt="夏天就要吃西瓜"><br>生日蛋糕<br><img src="https://i.imgur.com/ljlkkyE.jpg" alt="生日蛋糕"><br>还有好多杂七杂八的照片</p>
+<p>ptcl组里的办公室<br><img src="https://i.imgur.com/WVUYx8K.jpg" alt="ptcl组里的办公室"><br><img src="https://i.imgur.com/uZcTkRa.jpg" alt="ptcl组里的办公室"></p>
+<p>从体育馆游泳回来, 路边看到的鸽子！<br><img src="https://i.imgur.com/NTVPJj3.jpg" alt="从体育馆游泳回来的路边看到的鸽子！"><br><img src="https://i.imgur.com/TXEX2Ms.jpg" alt="从体育馆游泳回来的路边看到的鸽子！"></p>
+<p>还有好多杂七杂八的照片以后慢慢发</p>
+
+    </div>
+
+    
+    
+    
+
+      <footer class="post-footer">
+          
+          <div class="post-tags">
+              <a href="/tags/ramblings/" rel="tag"><i class="fa fa-tag"></i> 随笔</a>
+              <a href="/tags/keyboard-chemistry/" rel="tag"><i class="fa fa-tag"></i> 键盘化学家</a>
+              <a href="/tags/anything-but-work/" rel="tag"><i class="fa fa-tag"></i> 不务正业</a>
+              <a href="/tags/photos/" rel="tag"><i class="fa fa-tag"></i> 图集</a>
+              <a href="/tags/oxford/" rel="tag"><i class="fa fa-tag"></i> 牛津</a>
+          </div>
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2020/06/19/2/" rel="prev" title="在 github 上用 hexo 搭建个人博客">
+      <i class="fa fa-chevron-left"></i> 在 github 上用 hexo 搭建个人博客
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/2021/08/10/2/" rel="next" title="编译带 dftd4 的 vasp.6.2.1">
+      编译带 dftd4 的 vasp.6.2.1 <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="lqid"
+      src="/avatar.gif">
+  <p class="site-author-name" itemprop="name">lqid</p>
+  <div class="site-description" itemprop="description">我好菜啊.jpg</div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">7</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+          
+        <span class="site-state-item-count">12</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+          
+        <span class="site-state-item-count">7</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+
+
+
+      </div>
+        <div class="back-to-top motion-element">
+          <i class="fa fa-arrow-up"></i>
+          <span>0%</span>
+        </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2021</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">lqid</span>
+</div>
+  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://pisces.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Pisces</a> 强力驱动
+  </div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/pisces.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+</body>
+</html>
